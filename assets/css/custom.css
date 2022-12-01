@@ -37,7 +37,7 @@ h6 {
     font-size: 1rem;
 }
 
-#sobre, #servicos {
+#sobre, #servicos, #provas {
     padding: 50px 0;
 }
 
@@ -116,4 +116,57 @@ h6 {
 
 #servicos .area-card-servicos .card-servicos:hover>.content p {
     color: #fff;
+}
+
+
+
+/* WHATSAPP */
+
+#modalWhatsapp button.cta {
+    color: #000;
+    background-color: var(--amarelo);
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 20px 40px;
+    transition: all .5s;
+    border: none;
+    outline: none;
+    width: 100%;
+    transition: all .3s;
+}
+
+#modalWhatsapp button.cta:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.btn-whatsapp-pulse {
+    background: #25d366;
+    color: white;
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 0;
+    height: 0;
+    padding: 35px;
+    text-decoration: none;
+    border-radius: 50%;
+    animation-name: pulse;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.8);
+    }
+
+    80% {
+        box-shadow: 0 0 0 14px rgba(37, 211, 102, 0);
+    }
 }

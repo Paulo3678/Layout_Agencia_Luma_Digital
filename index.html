@@ -57,9 +57,8 @@
                         <div class="col-12 col-md-6">
                             <div>
                                 <h4>Nosso Conceito</h4>
-                                <p>Ser a ponte entre a publicidade offline e online, usando o mais profundo conhecimento
-                                    em omnichannel para propagar, difundir e comunicar marcas com estratégia, conceito e
-                                    a criatividade que visa engajamento, alcance, comunicação e conversão.</p>
+                                <p>Através de Estratégias de Marketing Digital, somos uma empresa de comunicação que irá
+                                    ajudar a sua empresa a alcanças novos objetivos.</p>
                                 <p>Acreditamos que nosso principal bem são as pessoas, por isso nosso foco é na
                                     humanização do uso das plataformas digitais.</p>
                             </div>
@@ -160,6 +159,58 @@
         </div>
     </section>
 
+    <section id="provas">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2>Decole com a sua Marca!</h2>
+
+                    <p>Somos uma agência de marketing digital, que tem como objetivo ajudar empresas, de todos os
+                        segmentos, a alcançar resultados online. Desenvolvemos estratégias personalizadas para que a sua
+                        empresa possa decolar e ter uma visibilidade real na internet.</p>
+                    <p>Quer entender um pouco mais de como o marketing digital transformou o nosso dia a dia e como ele
+                        poderá mexer com a sua realidade, abaixo contamos um pouco. Temos certeza que você não irá se
+                        arrepender</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="modal fade" id="modalWhatsapp" tabindex="-1" role="dialog" aria-labelledby="modalWhatsappLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalWhatsappLabel">
+                        Por sua segurança, coloque seu nome e número de celular para contatar um assessor digital por
+                        Whatsapp
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="formulario-whatsapp" action="/enviar-whatsapp" method="POST">
+                        <input type="hidden" name="<?= $this->security->get_csrf_token_name() ?>"
+                            value="<?= $this->security->get_csrf_hash() ?>">
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="nome" placeholder="Nome">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control telefone" name="telefone" placeholder="Telefone">
+                        </div>
+                        <small class="mb-2 d-block">Fique tranquilo, não iremos compartilhar seus dados</small>
+                        <button type="submit" class="cta">Entrar em contato</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="btn-whatsapp-pulse" data-toggle="modal" data-target="#modalWhatsapp">
+        <i class="fab fa-whatsapp"></i>
+    </section>
+    
     <!-- BOOTSTRAP -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
