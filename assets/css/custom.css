@@ -260,6 +260,28 @@ button:focus {
     justify-content: space-between;
 }
 
+/* RODAPÉ */
+footer{
+    padding-top: 40px;
+    padding-bottom: 10px;
+    background-color: #f7f7f7;
+    text-align: left;
+}
+
+footer li{
+    font-size: .9rem;
+}
+footer ul{
+    list-style: none;
+    padding: 0;
+}
+footer a{
+    color: #000;
+}
+
+footer a:hover{
+    color: var(--verde-luma);
+}
 /* WHATSAPP */
 
 #modalWhatsapp button.cta {
