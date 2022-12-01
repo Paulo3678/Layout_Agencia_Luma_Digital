@@ -31,7 +31,7 @@ h6 {
     font-size: 1rem;
 }
 
-#sobre {
+#sobre, #como-ajudamos {
     padding: 50px 0;
 }
 
@@ -89,3 +89,34 @@ h6 {
 }
 
 /* SOBRE */
+
+/* COMO PODEMOS TE AJUDAR? */
+#como-ajudamos{
+    background-color: #f7f7f7;
+}
+
+#como-ajudamos .area-card-como-ajudamos{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#como-ajudamos .area-card-como-ajudamos .card-como-ajudamos{
+    width: 500px;
+    margin-bottom: 40px;
+    min-height: 300px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 20px;
+}
+#como-ajudamos .area-card-como-ajudamos .card-como-ajudamos h3{
+    font-size: 1.3rem;
+    color: var(--verde-luma);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#como-ajudamos .area-card-como-ajudamos .card-como-ajudamos h3 i{
+    color: var(--roxo-luma);
+}
