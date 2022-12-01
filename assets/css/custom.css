@@ -5,6 +5,12 @@
     --secondary: #51CFED;
     --light: #F8F2F0;
     --dark: #060315;
+    --yellow: #FFD372;
+    --ligh-purple: #8D9EFF;
+    --light-green: #B6E2A1;
+    --light-red: #E97777;
+    --ligh-blue: #81C6E8;
+
 }
 
 body {
@@ -14,9 +20,11 @@ body {
 a:hover {
     text-decoration: none;
 }
-.card-contador{
+
+.card-contador {
     text-align: center;
 }
+
 h2 {
     font-weight: bold;
     text-transform: uppercase;
@@ -39,7 +47,7 @@ h6 {
     font-size: 1rem;
 }
 
-#sobre, #servicos, #provas {
+#sobre, #servicos, #provas, #segmento {
     padding: 50px 0;
 }
 
@@ -58,10 +66,11 @@ h6 {
 }
 
 /* SOBRE */
-#sobre h4{
+#sobre h4 {
     color: var(--verde-luma);
     font-weight: bold;
 }
+
 /* LGS */
 #lgs img {
     width: 200px;
@@ -124,7 +133,82 @@ h6 {
 }
 
 
+/* SEGMENTO */
+#segmento {
+    background-color: #f7f7f7;
+}
 
+#segmento .area-cards-duvida {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#segmento .area-cards-duvida .card-duvida {
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    transition: all .3s;
+    width: 300px;
+    min-height: 150px;
+    color: #fff;
+}
+
+#segmento .area-cards-duvida .card-duvida h6 {
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+#segmento .area-cards-duvida .card-duvida i{
+    font-size: 2rem;
+    margin: 20px 0;
+}
+
+#segmento .area-cards-duvida .card-duvida[data-colorbg="color1"] {
+    background-color: var(--yellow);
+}
+
+#segmento .area-cards-duvida .card-duvida[data-colorbg="color2"] {
+    background-color: var(--ligh-purple);
+}
+
+#segmento .area-cards-duvida .card-duvida[data-colorbg="color3"] {
+    background-color: var(--light-green);
+}
+
+#segmento .area-cards-duvida .card-duvida[data-colorbg="color4"] {
+    background-color: var(--light-red);
+}
+
+#segmento .area-cards-duvida .card-duvida[data-colorbg="color5"] {
+    background-color: var(--ligh-blue);
+}
+
+#segmento .content{
+    padding: 40px 0;
+}
+
+#segmento .content h3{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+#segmento .cta a{
+    background-color: var(--verde-luma);
+    padding: 20px 30px;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    transition: all .3s;
+}
+#segmento .cta a:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
 /* WHATSAPP */
 
 #modalWhatsapp button.cta {
