@@ -1,31 +1,67 @@
+:root {
+    --verde-luma: #229089;
+    --roxo-luma: #40255F;
+    --primary: #FF3E41;
+    --secondary: #51CFED;
+    --light: #F8F2F0;
+    --dark: #060315;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
 }
 
 
-h2{
+h2 {
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 40px;
+    font-size: 1.8rem;
 }
 
+p {
+    font-size: .9rem;
+}
 
-#sobre{
+h4 {
+    font-size: 1.3rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+#sobre {
     padding: 50px 0;
 }
+
+.info-text-blue {
+    background-color: #229089;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.info-text-blue h1, .info-text-blue h2, .info-text-blue h3, .info-text-blue h4,.info-text-blue h5, .info-text-blue h6,
+.info-text-blue p{
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
 /* HEADER */
-.area-oque-fazemos{
+.area-oque-fazemos {
     display: flex;
     justify-content: center;
 }
 
-.area-oque-fazemos .card-oque-fazemos{
+.area-oque-fazemos .card-oque-fazemos {
     width: 100%;
     height: 250px;
     position: relative;
 }
 
-.area-oque-fazemos .card-oque-fazemos img{
+.area-oque-fazemos .card-oque-fazemos img {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -33,7 +69,7 @@ h2{
     z-index: 5;
 }
 
-.area-oque-fazemos .card-oque-fazemos .content{
+.area-oque-fazemos .card-oque-fazemos .content {
     position: absolute;
     z-index: 10;
     background-color: rgba(0, 0, 0, .4);
@@ -45,7 +81,7 @@ h2{
     align-items: center;
 }
 
-.area-oque-fazemos .card-oque-fazemos .content h3{
+.area-oque-fazemos .card-oque-fazemos .content h3 {
     font-weight: bold;
     text-transform: uppercase;
     color: #fff;
