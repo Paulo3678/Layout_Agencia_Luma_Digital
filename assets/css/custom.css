@@ -3,6 +3,16 @@ body {
 }
 
 
+h2{
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+
+#sobre{
+    padding: 50px 0;
+}
 /* HEADER */
 .area-oque-fazemos{
     display: flex;
@@ -41,3 +51,5 @@ body {
     color: #fff;
     font-size: 1.3rem;
 }
+
+/* SOBRE */
