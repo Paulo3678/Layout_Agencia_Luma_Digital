@@ -165,16 +165,67 @@
                 <div class="col-12 text-center">
                     <h2>Decole com a sua Marca!</h2>
 
-                    <p>Somos uma agência de marketing digital, que tem como objetivo ajudar empresas, de todos os
+                    <p>
+                        Somos uma agência de marketing digital, que tem como objetivo ajudar empresas, de todos os
                         segmentos, a alcançar resultados online. Desenvolvemos estratégias personalizadas para que a sua
-                        empresa possa decolar e ter uma visibilidade real na internet.</p>
-                    <p>Quer entender um pouco mais de como o marketing digital transformou o nosso dia a dia e como ele
+                        empresa possa decolar e ter uma visibilidade real na internet.
+                    </p>
+                    <p>
+                        Quer entender um pouco mais de como o marketing digital transformou o nosso dia a dia e como ele
                         poderá mexer com a sua realidade, abaixo contamos um pouco. Temos certeza que você não irá se
-                        arrepender</p>
+                        arrepender
+                    </p>
+                </div>
+
+                <div class="col-12 mt-5">
+                    <div class="row">
+                        <div class="col-12 col-md-4 d-flex justify-content-center">
+                            <div class="card-contador">
+                                <h3 class="numero">
+                                    + de <span class="numero-contar" data-count-to="2"></span> anos
+                                </h3>
+                                <p>
+                                    Trazendo o melhor para cada
+                                    <br>
+                                    um de nossos clientes
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-4 d-flex justify-content-center">
+                            <div class="card-contador">
+                                <h3 class="numero">
+                                    + de <span class="numero-contar" data-count-to="100"></span>
+                                </h3>
+                                <p>
+                                    Clientes satisfeitos com
+                                    <br>
+                                    nossos serviços
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-4 d-flex justify-content-center">
+                            <div class="card-contador">
+                                <h3 class="numero">
+                                    + de <span class="numero-contar" data-count-to="7"></span> anos
+                                </h3>
+                                <p>
+                                    De experiência 
+                                    <br>
+                                    em digital
+                                </p>
+                            </div>
+                        </div>
+
+                        
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <section id="duvidas"></section>
 
     <section class="modal fade" id="modalWhatsapp" tabindex="-1" role="dialog" aria-labelledby="modalWhatsappLabel"
         aria-hidden="true">
@@ -191,8 +242,6 @@
                 </div>
                 <div class="modal-body">
                     <form id="formulario-whatsapp" action="/enviar-whatsapp" method="POST">
-                        <input type="hidden" name="<?= $this->security->get_csrf_token_name() ?>"
-                            value="<?= $this->security->get_csrf_hash() ?>">
                         <div class="form-group">
                             <input type="text" class="form-control" name="nome" placeholder="Nome">
                         </div>
@@ -210,7 +259,7 @@
     <section class="btn-whatsapp-pulse" data-toggle="modal" data-target="#modalWhatsapp">
         <i class="fab fa-whatsapp"></i>
     </section>
-    
+
     <!-- BOOTSTRAP -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -221,6 +270,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+
+
+    <!-- CUSTOM -->
+    <script src="/assets/js/contador.js"></script>
 </body>
 
 </html>
