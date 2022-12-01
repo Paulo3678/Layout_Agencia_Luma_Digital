@@ -47,7 +47,7 @@ h6 {
     font-size: 1rem;
 }
 
-#sobre, #servicos, #provas, #segmento, #contato {
+#sobre, #servicos, #provas, #segmento, #contato, #duvidas {
     padding: 50px 0;
 }
 
@@ -214,14 +214,14 @@ h6 {
 
 /* CONTATO */
 #contato {
-    background-image: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)), url(/assets/images/banners/contact.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(/assets/images/banners/contact.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     color: #fff;
 }
 
-button:focus{
+button:focus {
     outline: none;
 }
 
@@ -232,10 +232,11 @@ button:focus{
     border-radius: 10px;
 }
 
-#contato form input, #contato form textarea{
+#contato form input, #contato form textarea {
     padding: 30px 20px;
 }
-#contato form button{
+
+#contato form button {
     background-color: var(--verde-luma);
     color: #fff;
     font-weight: bold;
@@ -244,6 +245,19 @@ button:focus{
     border: none;
     font-size: 1.4rem;
     width: 100%;
+}
+
+/* DÚVIDAS */
+#duvidas .card-duvida .collapse-question{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    text-align: left;
+    border-bottom: .25px solid rgba(0, 0, 0, 0.24);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 /* WHATSAPP */
@@ -259,6 +273,8 @@ button:focus{
     outline: none;
     width: 100%;
     transition: all .3s;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 #modalWhatsapp button.cta:hover {
