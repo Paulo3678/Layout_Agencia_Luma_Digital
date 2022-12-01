@@ -47,7 +47,7 @@ h6 {
     font-size: 1rem;
 }
 
-#sobre, #servicos, #provas, #segmento {
+#sobre, #servicos, #provas, #segmento, #contato {
     padding: 50px 0;
 }
 
@@ -161,7 +161,7 @@ h6 {
     text-transform: uppercase;
 }
 
-#segmento .area-cards-duvida .card-duvida i{
+#segmento .area-cards-duvida .card-duvida i {
     font-size: 2rem;
     margin: 20px 0;
 }
@@ -186,15 +186,16 @@ h6 {
     background-color: var(--ligh-blue);
 }
 
-#segmento .content{
+#segmento .content {
     padding: 40px 0;
 }
 
-#segmento .content h3{
+#segmento .content h3 {
     text-transform: uppercase;
     font-weight: bold;
 }
-#segmento .cta a{
+
+#segmento .cta a {
     background-color: var(--verde-luma);
     padding: 20px 30px;
     font-size: 1.3rem;
@@ -206,14 +207,50 @@ h6 {
     text-align: center;
     transition: all .3s;
 }
-#segmento .cta a:hover{
+
+#segmento .cta a:hover {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
+/* CONTATO */
+#contato {
+    background-image: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)), url(/assets/images/banners/contact.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+button:focus{
+    outline: none;
+}
+
+#contato form {
+    background-color: rgba(255, 255, 255, 0.24);
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#contato form input, #contato form textarea{
+    padding: 30px 20px;
+}
+#contato form button{
+    background-color: var(--verde-luma);
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 20px 30px;
+    border: none;
+    font-size: 1.4rem;
+    width: 100%;
+}
+
 /* WHATSAPP */
 
 #modalWhatsapp button.cta {
-    color: #000;
-    background-color: var(--amarelo);
+    color: #fff;
+    background-color: var(--roxo-luma);
     font-size: 1rem;
     font-weight: 500;
     padding: 20px 40px;
