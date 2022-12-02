@@ -23,9 +23,9 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
 
-    <!-- INCONS -->
+    <!-- Icons -->
     <link rel="stylesheet" href="/assets/fontawesome/css/all.min.css">
-    <script src="https://cdn.lordicon.com/fudrjiwc.js"></script>
+
 
     <link rel="shortcut icon" href="/assets/images/fav.png" type="image/png-icon">
 </head>
@@ -36,11 +36,35 @@
         <div id="carouselHeader" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block w-100" src="/assets/images/banners/header1.jpg" alt="First slide">
+                    <picture>
+                        <source srcset="/assets/images/banners/mob/header1.jpg" media="(max-width: 769px)"
+                            alt="Imagem de capa Cercas">
+                        <source srcset="/assets/images/banners/small/header1.jpg" media="(max-width: 360px)"
+                            alt="Imagem de capa Cercas">
+                        <img class="d-block w-100" src="/assets/images/banners/header1.jpg" alt="Imagem de capa Cercas">
+                    </picture>
                 </div>
             </div>
         </div>
     </header>
+    
+    <section id="mkt">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-6">
+                    <img src="/assets/images/banners/mkt.png" alt="">
+                </div>
+                <div class="col-12 col-md-6">
+                    <h2>Sabia que o marketing digital pode otimizar o tráfego do seu site e maximizar as vendas do seu negócio?</h2>
+                    <p>Com um planejamento estratégico de campanhas e anúncios, seu negócio atingirá o público-alvo ideal nos canais mais assertivos, maximizando a geração de leads altamente qualificados e otimizando o seu ROI.</p>
+                    <p>Leads e vendas são um desafio para o seu negócio? Descubra a nossa metodologia! A <strong>Luma Digital</strong> está entre as melhores agências de performance do Brasil.</p>
+                    <div class="cta">
+                        <a href="#">Entre em contato agora mesmo!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section id="sobre">
         <div class="container">
@@ -51,10 +75,16 @@
 
                 <div class="col-12">
                     <div class="row">
-                        <div class="col-12 col-md-6">
-                            <img src="/assets/images/banners/about.jpg" class="img-fluid" alt="">
+                        <div class="col-12 col-lg-6">
+                            <picture>
+                                <source srcset="/assets/images/banners/mob/about.jpg" media="(max-width: 769px)"
+                                    alt="Imagem de capa Cercas">
+                                    <source srcset="/assets/images/banners/small/about.jpg" media="(max-width: 360px)"
+                                    alt="Imagem de capa Cercas">
+                                <img src="/assets/images/banners/about.jpg" alt="Imagem de capa Cercas">
+                            </picture>
                         </div>
-                        <div class="col-12 col-md-6">
+                        <div class="col-12 col-lg-6">
                             <div>
                                 <h4>Nosso Conceito</h4>
                                 <p>Através de Estratégias de Marketing Digital, somos uma empresa de comunicação que irá
@@ -96,67 +126,60 @@
                     <h4>Agência de marketing digital em itaboraí</h4>
                     <h2>Conheça os nossos serviços</h2>
                 </div>
-
-                <div class="col-12">
-                    <div class="area-card-servicos">
-                        <a href="#" class="card-servicos">
-                            <div class="title">
-
-                                <h6>Gestão Premium de Redes Sociais</h6>
-
-                            </div>
-                            <div class="icon">
-                                <lord-icon src="https://cdn.lordicon.com/oegrrprk.json" trigger="hover">
-                                </lord-icon>
-                            </div>
-                            <div class="content">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            </div>
-                        </a>
-
-                        <a href="#" class="card-servicos">
-                            <div class="title">
-                                <h6>Consultoria de Negócios Digitais</h6>
-                            </div>
-                            <div class="icon">
-                                <lord-icon src="https://cdn.lordicon.com/rsvjbeuw.json" trigger="hover">
-                                </lord-icon>
-                            </div>
-                            <div class="content">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            </div>
-                        </a>
-
-                        <a href="#" class="card-servicos">
-                            <div class="title">
-                                <h6>Criação de Sites e Sistemas</h6>
-                            </div>
-                            <div class="icon">
-                                <lord-icon src="https://cdn.lordicon.com/qatykyxz.json" trigger="hover">
-                                </lord-icon>
-                            </div>
-                            <div class="content">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            </div>
-                        </a>
-
-                        <a href="#" class="card-servicos">
-                            <div class="title">
-                                <h6>Gestão de Tráfego: Google, Meta, TikTok ads</h6>
-                            </div>
-                            <div class="icon">
-                                <lord-icon src="https://cdn.lordicon.com/rzlaxyfo.json" trigger="hover">
-                                </lord-icon>
-                            </div>
-                            <div class="content">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            </div>
-                        </a>
-
-                    </div>
-                </div>
             </div>
         </div>
+
+        <div class="area-card-servicos">
+            <a href="#" class="card-servicos">
+                <div class="title">
+                    <h6>Gestão Premium de Redes Sociais</h6>
+                </div>
+                <div class="icon">
+                    <img src="/assets/images/icons/chart.svg" alt="">
+                </div>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </a>
+
+            <a href="#" class="card-servicos">
+                <div class="title">
+                    <h6>Consultoria de Negócios Digitais</h6>
+                </div>
+                <div class="icon">
+                    <img src="/assets/images/icons/earth.svg" alt="">
+                </div>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </a>
+
+            <a href="#" class="card-servicos">
+                <div class="title">
+                    <h6>Criação de Sites e Sistemas</h6>
+                </div>
+                <div class="icon">
+                    <img src="/assets/images/icons/cloud.svg" alt="">
+                </div>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </a>
+
+            <a href="#" class="card-servicos">
+                <div class="title">
+                    <h6>Gestão de Tráfego: Google, Meta, TikTok ads</h6>
+                </div>
+                <div class="icon">
+                    <img src="/assets/images/icons/percen.svg" alt="">
+                </div>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </a>
+
+        </div>
+
     </section>
 
     <section id="provas">
@@ -221,6 +244,158 @@
 
                     </div>
                 </div>
+
+                <div class="col-12 client">
+                    <div class="text-center">
+                        <h2>Alguns de nossos clientes</h2>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card-client">
+                                <picture>
+                                    <source srcset="/assets/images/clientes/cm2.png" media="(min-width: 769px)"
+                                        alt="Imagem de capa Cercas">
+                                    <source srcset="/assets/images/clientes/mob/cm2.png" media="(max-width: 768px)"
+                                        alt="Imagem de capa Cercas">
+                                    <img src="/assets/images/clientes/cm2.png" alt="Imagem de capa Cercas">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card-client">
+                                <picture>
+                                    <source srcset="/assets/images/clientes/ibcm.png" media="(min-width: 769px)"
+                                        alt="Imagem de capa Cercas">
+                                    <source srcset="/assets/images/clientes/mob/ibcm.png" media="(max-width: 768px)"
+                                        alt="Imagem de capa Cercas">
+                                    <img src="/assets/images/clientes/ibcm.png" alt="Imagem de capa Cercas">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card-client">
+                                <picture>
+                                    <source srcset="/assets/images/clientes/moss.png" media="(min-width: 769px)"
+                                        alt="Imagem de capa Cercas">
+                                    <source srcset="/assets/images/clientes/mob/moss.png" media="(max-width: 768px)"
+                                        alt="Imagem de capa Cercas">
+                                    <img src="/assets/images/clientes/moss.png" alt="Imagem de capa Cercas">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card-client">
+                                <picture>
+                                    <source srcset="/assets/images/clientes/dcset.png" media="(min-width: 769px)"
+                                        alt="Imagem de capa Cercas">
+                                    <source srcset="/assets/images/clientes/mob/dcset.png" media="(max-width: 768px)"
+                                        alt="Imagem de capa Cercas">
+                                    <img src="/assets/images/clientes/dcset.png" alt="Imagem de capa Cercas">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card-client">
+                                <picture>
+                                    <source srcset="/assets/images/clientes/perin.png" media="(min-width: 769px)"
+                                        alt="Imagem de capa Cercas">
+                                    <source srcset="/assets/images/clientes/mob/perin.png" media="(max-width: 768px)"
+                                        alt="Imagem de capa Cercas">
+                                    <img src="/assets/images/clientes/perin.png" alt="Imagem de capa Cercas">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card-client">
+                                <picture>
+                                    <source srcset="/assets/images/clientes/roche.png" media="(min-width: 769px)"
+                                        alt="Imagem de capa Cercas">
+                                    <source srcset="/assets/images/clientes/mob/roche.png" media="(max-width: 768px)"
+                                        alt="Imagem de capa Cercas">
+                                    <img src="/assets/images/clientes/roche.png" alt="Imagem de capa Cercas">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card-client">
+                                <picture>
+                                    <source srcset="/assets/images/clientes/cherry.png" media="(min-width: 769px)"
+                                        alt="Imagem de capa Cercas">
+                                    <source srcset="/assets/images/clientes/mob/cherry.png" media="(max-width: 768px)"
+                                        alt="Imagem de capa Cercas">
+                                    <img src="/assets/images/clientes/cherry.png" alt="Imagem de capa Cercas">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card-client">
+                                <picture>
+                                    <source srcset="/assets/images/clientes/hilton.png" media="(min-width: 769px)"
+                                        alt="Imagem de capa Cercas">
+                                    <source srcset="/assets/images/clientes/mob/hilton.png" media="(max-width: 768px)"
+                                        alt="Imagem de capa Cercas">
+                                    <img src="/assets/images/clientes/hilton.png" alt="Imagem de capa Cercas">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card-client">
+                                <picture>
+                                    <source srcset="/assets/images/clientes/singel.png" media="(min-width: 769px)"
+                                        alt="Imagem de capa Cercas">
+                                    <source srcset="/assets/images/clientes/mob/singel.png" media="(max-width: 768px)"
+                                        alt="Imagem de capa Cercas">
+                                    <img src="/assets/images/clientes/singel.png" alt="Imagem de capa Cercas">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card-client">
+                                <picture>
+                                    <source srcset="/assets/images/clientes/brenner.png" media="(min-width: 769px)"
+                                        alt="Imagem de capa Cercas">
+                                    <source srcset="/assets/images/clientes/mob/brenner.png" media="(max-width: 768px)"
+                                        alt="Imagem de capa Cercas">
+                                    <img src="/assets/images/clientes/brenner.png" alt="Imagem de capa Cercas">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card-client">
+                                <picture>
+                                    <source srcset="/assets/images/clientes/valecross.png" media="(min-width: 769px)"
+                                        alt="Imagem de capa Cercas">
+                                    <source srcset="/assets/images/clientes/mob/valecross.png"
+                                        media="(max-width: 768px)" alt="Imagem de capa Cercas">
+                                    <img src="/assets/images/clientes/valecross.png" alt="Imagem de capa Cercas">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card-client">
+                                <picture>
+                                    <source srcset="/assets/images/clientes/agencia-remax.png"
+                                        media="(min-width: 769px)" alt="Imagem de capa Cercas">
+                                    <source srcset="/assets/images/clientes/mob/agencia-remax.png"
+                                        media="(max-width: 768px)" alt="Imagem de capa Cercas">
+                                    <img src="/assets/images/clientes/agencia-remax.png" alt="Imagem de capa Cercas">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card-client">
+                                <picture>
+                                    <source srcset="/assets/images/clientes/blue-tree-hotel.png"
+                                        media="(min-width: 769px)" alt="Imagem de capa Cercas">
+                                    <source srcset="/assets/images/clientes/mob/blue-tree-hotel.png"
+                                        media="(max-width: 768px)" alt="Imagem de capa Cercas">
+                                    <img src="/assets/images/clientes/blue-tree-hotel.png" alt="Imagem de capa Cercas">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -277,31 +452,39 @@
                     </div>
                 </div>
 
-                <div class="col-12 content">
-                    <div class="row align-items-center">
-                        <div class="col-12 col-md-6">
-                            <img src="/assets/images/banners/vector/1.png" class="img-fluid" alt="">
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <h3>Não importa o seguemento</h3>
-                            <p>
-                                Seja seu serviço <strong>médico</strong>, <strong>advocacia</strong>,
-                                <strong>corretor de imóveis</strong>, <strong>imobiliária</strong> <strong>hotel de
-                                    hospedagem</strong>, através do conjunto de estratégias, nos trazemos mais chances
-                                de conversão de vendas para sua empresa, por meio de <strong>anúncios
-                                    patrocinados</strong>
-                                e posicionamento <strong>SEO</strong>. A <strong>Luma Digital</strong> é <strong>Agência
-                                    de Marketing Digital </strong>
-                                especialista em gestão de tráfego pago com experiência de sobra para divulgar a sua
-                                marca de maneira eficaz.
-                            </p>
-                            <div class="cta">
-                                <a href="#">Entre em contato agora mesmo!</a>
-                            </div>
-                        </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row content">
+                <div class="col-12 col-lg-6">
+                    <picture>
+                        <source srcset="/assets/images/banners/vector/1.png" media="(min-width: 769px)"
+                            alt="Imagem de capa Cercas">
+                        <source srcset="/assets/images/banners/mob/vector/1.png" media="(max-width: 768px)"
+                            alt="Imagem de capa Cercas">
+                        <img src="/assets/images/banners/vector/1.png" alt="Imagem de capa Cercas">
+                    </picture>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <h3>Não importa o seguemento</h3>
+                    <p>
+                        Seja seu serviço <strong>médico</strong>, <strong>advocacia</strong>,
+                        <strong>corretor de imóveis</strong>, <strong>imobiliária</strong> <strong>hotel de
+                            hospedagem</strong>, através do conjunto de estratégias, nos trazemos mais chances
+                        de conversão de vendas para sua empresa, por meio de <strong>anúncios
+                            patrocinados</strong>
+                        e posicionamento <strong>SEO</strong>. A <strong>Luma Digital</strong> é <strong>Agência
+                            de Marketing Digital </strong>
+                        especialista em gestão de tráfego pago com experiência de sobra para divulgar a sua
+                        marca de maneira eficaz.
+                    </p>
+                    <div class="cta">
+                        <a href="#">Entre em contato agora mesmo!</a>
                     </div>
                 </div>
             </div>
+
         </div>
     </section>
 
@@ -337,14 +520,21 @@
                     <h2>Perguntas Frequentes</h2>
                 </div>
                 <div class="col-12 col-md-6">
-                    <img src="/assets/images/banners/question.jpg" class="img-fluid" alt="">
+                    <picture>
+                        <source srcset="/assets/images/banners/mob/question.jpg" media="(max-width: 768px)"
+                            alt="Imagem de capa Cercas">
+                            <source srcset="/assets/images/banners/small/question.jpg" media="(max-width: 360px)"
+                            alt="Imagem de capa Cercas">
+                        <img src="/assets/images/banners/question.jpg" alt="Imagem de capa Cercas">
+                    </picture>
                 </div>
                 <div class="col-12 col-md-6">
 
                     <div class="card-duvida">
                         <button class="collapse-question" type="button" data-toggle="collapse"
                             data-target="#collapseDiferenca" aria-expanded="false" aria-controls="collapseDiferenca">
-                            <span>Qual a diferença da <strong>Luma Digital</strong> para outras agências de marketing digital?</span>
+                            <span>Qual a diferença da <strong>Luma Digital</strong> para outras agências de marketing
+                                digital?</span>
                             <i class="fa-solid fa-plus"></i>
                         </button>
                         <div class="collapse collapse-answer" id="collapseDiferenca">
@@ -379,7 +569,8 @@
                         </button>
                         <div class="collapse collapse-answer" id="collapseComoEh">
                             <div class="card card-body">
-                                <p>A <strong>Luma Digital</strong> é uma das agências de marketing digital que conta com um mapeamento
+                                <p>A <strong>Luma Digital</strong> é uma das agências de marketing digital que conta com
+                                    um mapeamento
                                     completo do seu modelo de negócio para poder oferecer as melhores opções.</p>
                             </div>
                         </div>
@@ -408,7 +599,8 @@
                         </button>
                         <div class="collapse collapse-answer" id="collapseFunciona">
                             <div class="card card-body">
-                                <p>Nós da <strong>Luma Digital</strong> agência de marketing digital desenvolvemos Planejamento e
+                                <p>Nós da <strong>Luma Digital</strong> agência de marketing digital desenvolvemos
+                                    Planejamento e
                                     estratégias que utilizam da visibilidade digital para atingir os objetivos da sua
                                     empresa.</p>
                             </div>
@@ -487,7 +679,6 @@
         <i class="fab fa-whatsapp"></i>
     </section>
 
-
     <footer>
         <div class="container">
             <div class="row">
@@ -504,7 +695,7 @@
                     </ul>
                     <div>
                         <p class="d-flex align-items-center">
-                            <i class="fa-solid fa-envelope mr-1"></i> 
+                            <i class="fa-solid fa-envelope mr-1"></i>
                             <span>comercial@agencialumadigital.com.br</span>
                         </p>
                     </div>
@@ -523,7 +714,8 @@
                             <a href=""><i class="fa-solid fa-chevron-right"></i> Criação de sites e sistemas</a>
                         </li>
                         <li>
-                            <a href=""><i class="fa-solid fa-chevron-right"></i> Gestão de tráfego: Google, Meta, TikTok Ads</a>
+                            <a href=""><i class="fa-solid fa-chevron-right"></i> Gestão de tráfego: Google, Meta, TikTok
+                                Ads</a>
                         </li>
                     </ul>
                 </div>
@@ -544,7 +736,7 @@
                 </div>
 
                 <div class="col-12 col-md-3">
-                    <img src="/assets/images/logo.png" class="img-fluid" alt="">
+                    <img src="/assets/images/logo.png" id="logo" alt="">
                 </div>
 
                 <div class="col-12 rights text-center">

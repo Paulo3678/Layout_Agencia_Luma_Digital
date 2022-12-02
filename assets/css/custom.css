@@ -47,7 +47,7 @@ h6 {
     font-size: 1rem;
 }
 
-#sobre, #servicos, #provas, #segmento, #contato, #duvidas {
+#sobre, #servicos, #provas, #segmento, #contato, #duvidas,#mkt {
     padding: 50px 0;
 }
 
@@ -65,10 +65,55 @@ h6 {
     font-weight: bold;
 }
 
+@media (max-width: 769px) {
+    .card-contador {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+
+}
+/* MKT */
+#mkt{
+    background-color: #f7f7f7;
+}
+#mkt img{
+    width: 100%;
+}
+
+#mkt div.cta a{
+    background-color: var(--verde-luma);
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 20px 30px;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    font-size: 1.3rem;
+}
 /* SOBRE */
 #sobre h4 {
     color: var(--verde-luma);
     font-weight: bold;
+}
+
+#sobre img{
+    width: 100%;
+}
+
+@media (max-width:992px) {
+    #sobre {
+        text-align: center;
+    }
+
+    #sobre img {
+        margin-bottom: 20px;
+    }
 }
 
 /* LGS */
@@ -83,12 +128,24 @@ h6 {
     align-items: center;
 }
 
+@media (max-width:768px) {
+    #lgs .content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #lgs .content img {
+        margin-bottom: 0;
+        width: 150px;
+    }
+}
+
 /* SERVICOS */
 #servicos {
     background-color: #f7f7f7;
 }
 
-#servicos lord-icon {
+#servicos img {
     width: 100px;
     height: 100px;
 }
@@ -96,6 +153,8 @@ h6 {
 #servicos .area-card-servicos {
     display: flex;
     justify-content: center;
+    width: 1200px;
+    margin: 0 auto;
 }
 
 #servicos .area-card-servicos .card-servicos {
@@ -132,6 +191,58 @@ h6 {
     color: #fff;
 }
 
+@media (max-width: 1200px) {
+    #servicos .area-card-servicos {
+        width: 992px;
+    }
+
+}
+
+@media (max-width: 992px) {
+    #servicos .area-card-servicos {
+        width: 768px;
+        flex-wrap: wrap;
+    }
+
+    #servicos .area-card-servicos .card-servicos {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    #servicos .area-card-servicos {
+        width: 100%;
+    }
+
+    #servicos .area-card-servicos .card-servicos {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    #servicos .area-card-servicos .card-servicos {
+        width: 100%;
+    }
+}
+
+/* PROVAS */
+#provas .client {
+    padding-top: 40px;
+}
+
+#provas .client .row {
+    justify-content: center;
+}
+
+#provas .client .card-client {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 20px;
+    margin: 20px 10px;
+}
+
+#provas .client .card-client img {
+    width: 100%;
+}
 
 /* SEGMENTO */
 #segmento {
@@ -208,8 +319,22 @@ h6 {
     transition: all .3s;
 }
 
+#segmento .content img {
+    width: 100%;
+}
+
 #segmento .cta a:hover {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+@media (max-width: 992px) {
+    #segmento .content {
+        text-align: center;
+    }
+
+    #segmento .content img {
+        margin-bottom: 20px;
+    }
 }
 
 /* CONTATO */
@@ -220,6 +345,19 @@ h6 {
     background-repeat: no-repeat;
     color: #fff;
 }
+
+@media (max-width: 576px) {
+    #contato {
+        background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(/assets/images/banners/mob/contact.jpg);
+    }
+}
+
+@media (max-width: 320px) {
+    #contato {
+        background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(/assets/images/banners/small/contact.jpg);
+    }
+}
+
 
 button:focus {
     outline: none;
@@ -247,8 +385,22 @@ button:focus {
     width: 100%;
 }
 
+@media (max-width: 576px) {
+
+    #contato form {
+        padding: 10px;
+    }
+
+    #contato form h2 {
+        margin-bottom: 20px;
+    }
+}
+
 /* DÚVIDAS */
-#duvidas .card-duvida .collapse-question{
+#duvidas img{
+    width: 100%;
+}
+#duvidas .card-duvida .collapse-question {
     width: 100%;
     background-color: transparent;
     border: none;
@@ -261,27 +413,32 @@ button:focus {
 }
 
 /* RODAPÉ */
-footer{
+footer {
     padding-top: 40px;
     padding-bottom: 10px;
     background-color: #f7f7f7;
     text-align: left;
 }
-
-footer li{
+footer #logo{
+    width: 250px;
+}
+footer li {
     font-size: .9rem;
 }
-footer ul{
+
+footer ul {
     list-style: none;
     padding: 0;
 }
-footer a{
+
+footer a {
     color: #000;
 }
 
-footer a:hover{
+footer a:hover {
     color: var(--verde-luma);
 }
+
 /* WHATSAPP */
 
 #modalWhatsapp button.cta {
