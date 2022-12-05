@@ -47,7 +47,7 @@ h6 {
     font-size: 1rem;
 }
 
-#sobre, #servicos, #provas, #segmento, #contato, #duvidas,#mkt {
+#sobre, #servicos, #provas, #segmento, #contato, #duvidas, #mkt {
     padding: 50px 0;
 }
 
@@ -58,8 +58,22 @@ h6 {
     padding: 10px;
 }
 
+.info-text-purple {
+    background-color: var(--roxo-luma);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
 .info-text-blue h1, .info-text-blue h2, .info-text-blue h3, .info-text-blue h4, .info-text-blue h5, .info-text-blue h6,
 .info-text-blue p {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.info-text-purple h1, .info-text-purple h2, .info-text-purple h3, .info-text-purple h4, .info-text-purple h5, .info-text-purple h6,
+.info-text-purple p {
     margin-bottom: 0;
     text-transform: uppercase;
     font-weight: bold;
@@ -77,15 +91,119 @@ h6 {
     }
 
 }
-/* MKT */
-#mkt{
-    background-color: #f7f7f7;
+
+/* SERVICES TOP */
+#services-top {
+    display: flex;
+    justify-content: center;
 }
-#mkt img{
+
+#services-top .card-services-top {
+    width: 25%;
+    min-height: 200px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#services-top .card-services-top .icon {
     width: 100%;
 }
 
-#mkt div.cta a{
+#services-top .card-services-top i {
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+#services-top .card-services-top h3 {
+    width: 100%;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+#services-top .card-services-top[data-bgcolor="blue"] {
+    background-color: rgba(34, 144, 137, .3);
+}
+
+#services-top .card-services-top[data-bgcolor="purple"] {
+    background-color: rgba(64, 37, 95, .3);
+}
+
+@media (max-width: 992px) {
+    #services-top .card-services-top {
+        min-height: 150px;
+    }
+
+    #services-top .card-services-top i {
+        font-size: 2rem;
+    }
+
+    #services-top .card-services-top h3 {
+        font-size: 1.3rem;
+    }
+}
+
+
+@media (max-width: 769px) {
+    #services-top {
+        flex-wrap: wrap;
+    }
+
+    #services-top .card-services-top {
+        width: 50%;
+    }
+
+    #services-top .card-services-top i {
+        font-size: 2rem;
+    }
+
+    #services-top .card-services-top h3 {
+        font-size: 1.3rem;
+    }
+
+    #services-top .card-services-top[data-bgmedium="blue"] {
+        background-color: rgba(34, 144, 137, .3);
+    }
+
+    #services-top .card-services-top[data-bgmedium="purple"] {
+        background-color: rgba(64, 37, 95, .3);
+    }
+}
+
+
+
+@media (max-width: 769px) {
+    #services-top .card-services-top {
+        width: 100%;
+        min-height: unset;
+    }
+
+    #services-top .card-services-top[data-bgmedium="blue"] {
+        background-color: rgba(64, 37, 95, .3);
+    }
+
+    #services-top .card-services-top[data-bgmedium="purple"] {
+        background-color: rgba(34, 144, 137, .3);
+    }
+}
+
+
+/* MKT */
+#mkt {
+    background-color: #f7f7f7;
+}
+
+#mkt img {
+    width: 100%;
+}
+
+#mkt div.cta a {
     background-color: var(--verde-luma);
     color: #fff;
     font-weight: bold;
@@ -96,13 +214,19 @@ h6 {
     text-align: center;
     font-size: 1.3rem;
 }
+
+@media (max-width: 769px) {
+    #mkt{
+        text-align: center;
+    }
+}
 /* SOBRE */
 #sobre h4 {
     color: var(--verde-luma);
     font-weight: bold;
 }
 
-#sobre img{
+#sobre img {
     width: 100%;
 }
 
@@ -115,6 +239,7 @@ h6 {
         margin-bottom: 20px;
     }
 }
+
 
 /* LGS */
 #lgs img {
@@ -397,9 +522,10 @@ button:focus {
 }
 
 /* DÚVIDAS */
-#duvidas img{
+#duvidas img {
     width: 100%;
 }
+
 #duvidas .card-duvida .collapse-question {
     width: 100%;
     background-color: transparent;
@@ -419,9 +545,11 @@ footer {
     background-color: #f7f7f7;
     text-align: left;
 }
-footer #logo{
+
+footer #logo {
     width: 250px;
 }
+
 footer li {
     font-size: .9rem;
 }
@@ -437,6 +565,12 @@ footer a {
 
 footer a:hover {
     color: var(--verde-luma);
+}
+@media (max-width: 992px) {
+    
+footer #logo {
+    width: 200px;
+}
 }
 
 /* WHATSAPP */
